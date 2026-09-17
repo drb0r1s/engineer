@@ -4,7 +4,7 @@ A minimal, dependency-free state manager for JavaScript applications that need f
 
 ## Why Engineer?
 
-Engineer was built while developing [Assembly Reality](#), a web-based assembly language simulator (my Bachelor's thesis project at UP FAMNIT). The UI needs to reflect rapid, frequent state changes: CPU registers, memory, and I/O devices updating in near real time as code executes. Redux (and other general solutions) were too slow for this use case, the overhead of its dispatch and selector model introduced noticeable lag under frequent updates.
+Engineer was built while developing [Assembly Reality](https://github.com/drb0r1s/assembly-reality), a web-based assembly language simulator (my Bachelor's thesis project at UP FAMNIT). The UI needs to reflect rapid, frequent state changes: CPU registers, memory, and I/O devices updating in near real time as code executes. Redux (and other general solutions) were too slow for this use case, the overhead of its dispatch and selector model introduced noticeable lag under frequent updates.
 
 Engineer solves this with a much smaller surface area: a plain key/value store with direct subscriptions and an explicit batching mechanism, so consumers only get notified when they actually need to be.
 
@@ -79,4 +79,4 @@ Runs `callback` synchronously, deferring all `set`/`trigger` notifications until
 
 ## Used by
 
-Assembly Reality's entire UI state layer (theme, editor state, CPU/memory view toggles, execution state, autosave flags) is built directly on top of Engineer.
+[Assembly Reality](https://github.com/drb0r1s/assembly-reality)'s entire UI state layer (theme, editor state, CPU/memory view toggles, execution state, autosave flags) is built directly on top of Engineer.
