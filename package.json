@@ -1,0 +1,10 @@
+{
+    "name": "@drb0r1s/engineer",
+    "version": "1.0.1",
+    "description": "Lightweight and fast state manager built for high-frequency UI updates.",
+    "main": "engineer.js",
+    "type": "module",
+    "files": [
+        "dist"
+    ]
+}

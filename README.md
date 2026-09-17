@@ -18,7 +18,7 @@ Engineer solves this with a much smaller surface area: a plain key/value store w
 ## Installation
  
 ```bash
-npm i drb0r1s/engineer
+npm i @drb0r1s/engineer
 ```
  
 ```javascript
